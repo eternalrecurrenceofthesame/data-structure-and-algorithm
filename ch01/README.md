@@ -25,5 +25,25 @@ System.out.println("max3(3,2,1) = " + max3(3,4,1));
 
 조건을 평가한 결과에 따라 실행 흐름이 변경되는 if 문 = 선택 구조
 
-#### + 세 값의 대소 관계와 중앙값
-
+#### + 세 값의 중앙값 구하기
+```
+static int med3(int a, int b, int c){
+if(a >= b)
+  if(b >= c)
+    return b;
+  
+  else if(a <= c)
+    return a;
+  else   
+    return c;
+    
+  else if(a > c)
+    return a;
+  
+  else if(b > c)
+    return c;
+  
+  else
+    return b;
+}
+```
